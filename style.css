@@ -1,0 +1,91 @@
+/* Общий стиль страницы */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* Поле ввода и кнопка */
+input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f87;
+}
+
+/* Результаты погоды и страны */
+#weatherResult, #countryResult {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Стиль флага */
+img.flag {
+    width: 60px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Responsive для мобильных устройств */
+@media (max-width: 480px) {
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #weatherResult, #countryResult {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    img.flag {
+        width: 50px;
+    }
+}
